@@ -1,0 +1,53 @@
+.aql-container {
+    font-size: 15px;
+    display: none;
+    margin-left: -20px;
+    overflow: hidden;
+}
+.aql-container.aql-size-small {
+    font-size: 12px;
+}
+.aql-container.aql-size-large {
+    font-size: 20px;
+}
+.aql-bar {
+    --aql-spacing: 0.5em;
+    --aql-height: 2.4em;
+    --aql-background: #2673aa;
+    --aql-icon: steelblue;
+}
+.aql-bar ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.aql-bar > ul {
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    padding: var(--aql-spacing);
+    background: var(--aql-background);
+    gap: var(--aql-spacing);
+}
+.aql-bar > ul > li {
+    position: relative;
+}
+.aql-bar > ul > li > a {
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--aql-height);
+    background-color: rgba(255, 255, 255, 0.86);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: .3em;
+    padding: 0 0.9em;
+}
+.aql-bar > ul > li > a:hover {
+    color: #333;
+    background-color: rgba(255, 255, 255, 1);
+}
